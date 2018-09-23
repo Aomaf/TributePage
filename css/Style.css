@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot?8viq23');
+    src: url('fonts/icomoon.eot?8viq23#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?8viq23') format('truetype'),
+        url('fonts/icomoon.woff?8viq23') format('woff'),
+        url('fonts/icomoon.svg?8viq23#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    font-family: 'icomoon' !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+
+.icon-twitter:before {
+    content: "\f099";
+}
+
+.icon-twitter:hover {
+    color: #23aacb;
+}
+
+.icon-facebook-f:before {
+    content: "\f09a";
+}
+
+.icon-facebook-f:hover {
+    color: #1a4fef;
+}
+
+.icon-youtube-play:before {
+    content: "\f16a";
+}
+
+.icon-youtube-play:hover {
+    color: #ef1a2b;
+}
+
+.icon-earth:before {
+    content: "\e9ca";
+}
+
+.icon-earth:hover {
+    color: #558;
+}
+
+:root {
+    --main: ;
+    --sup: ;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    background-image: linear-gradient(to right, #220228 0%, #421b48 19%, #220228 42%, #421b48 79%, #220228 100%);
+}
+
+header {
+    background-image: url('../img/BB.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 795px;
+    position: relative;
+    box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.6);
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    padding-right: 0;
+    color: #fff;
+    background-image: linear-gradient(135deg, #370240 0%, #0f0f0f00 100%);
+    z-index: 1;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.overlay .wraper {
+    position: relative;
+    margin: auto 0;
+}
+
+.overlay .wraper .title {
+    width: 500px;
+}
+
+.overlay .wraper h1 {
+    font-size: 72px;
+    font-weight: 100;
+    font-family: 'Fredoka One', cursive;
+    text-transform: uppercase;
+}
+
+.overlay .wraper p {
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.overlay .wraper h2 {
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+
+
+.overlay .wraper .social {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 2%;
+    top: 2%;
+
+}
+
+.overlay .wraper .social a {
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    margin: 10px auto;
+}
+
+.overlay .wraper .social a span {
+    transition: all .5s;
+}
+
+/* moblie frendly 📲*************/
+@media screen and (max-width:1000px) {
+    header {
+        background-position: top;
+    }
+}
+
+@media screen and (max-width:780px) {
+    header {
+        background-position: top;
+    }
+
+    .overlay .wraper {
+        margin: auto auto;
+    }
+
+    .overlay .wraper .title {
+        width: 300px;
+    }
+
+    .overlay .wraper h1 {
+        font-size: 52px;
+    }
+
+    .overlay .wraper .title h1 span {
+        color: #C55;
+    }
+
+    .overlay .wraper p {
+        line-height: 1.2;
+    }
+
+
+    .overlay .wraper h2 {
+        font-size: 30px;
+
+    }
+
+    .overlay .wraper .social {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        left: 0;
+        bottom: 0;
+    }
+
+
+    .overlay .wraper .social a {
+        font-size: 23px;
+        margin: 0 30px;
+        bottom: 0;
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        background-position: right;
+    }
+
+    .overlay .wraper {
+        text-align: center;
+        margin: 40% 0 0 0;
+    }
+
+
+    .title {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .overlay .wraper h1 {
+        font-size: 62px;
+        margin: 0 0 20% 0;
+
+    }
+
+    .overlay .wraper h2 {
+        font-size: 25px;
+    }
+
+    .overlay .wraper .social {
+        width: 50%;
+        margin: auto;
+    }
+
+    .overlay .wraper .social a {
+        font-size: 23px;
+        margin: 0 auto 0 auto;
+        bottom: 0;
+    }
+
+}
+
+/*------------------- body ---------*/
+
+.contaner {
+    /*    max-width: 960px;
+    */
+    margin: 0 auto;
+}
+
+.contaner section {
+    padding: 30px;
+    /*    background: rgba(255, 255, 255, 0.5);*/
+}
+
+
+.contaner .card {
+    width: 80%;
+    margin: 50px auto auto auto;
+    background: #541290;
+    color: #fff;
+    padding: 30px;
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 1px 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.contaner .card img {
+    flex: 1 1 auto;
+    background: transparent;
+    border-radius: 5px;
+    height: 100%;
+    box-shadow: 1px 8px 20px rgba(0, 0, 0, 0.4);
+
+}
+
+.contaner .card article {
+    flex: 1 1 auto;
+    margin: auto 50px;
+    display: inline;
+}
+
+.contaner .card article h2 {
+    font-weight: bold;
+    font-size: 25px;
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.contaner .card article p {
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 5px;
+}
+
+/*📱 ********************** 📱*/
+
+@media screen and (max-width:800px) {
+    .contaner section {
+        padding: 15px;
+    }
+
+    .contaner .card {
+        width: 90%;
+        padding: 15px;
+        flex-direction: column;
+    }
+
+    .contaner .card img {
+        width: 90%;
+        margin: auto;
+    }
+
+    .contaner .card article {
+        flex: 1 1 auto;
+        width: 90%;
+        margin: 30px auto;
+    }
+
+
+}
+
+
+.contaner section .info {
+    position: relative;
+    background: #fff;
+    padding: 40px;
+    border-radius: 5px;
+    margin: 2% auto;
+    background: #471563;
+    /*    border-left: 30px solid #4e3850;*/
+}
+
+.contaner section article::before {
+    content: '';
+    width: 10px;
+    height: 100px;
+    background: #591399;
+    position: absolute;
+    z-index: -1;
+    left: calc(50% - 20px);
+    top: -94px;
+}
+
+.contaner section article p {
+    color: #ccc;
+    font-size: 18px;
+    line-height: 1.7;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+
+}
+
+
+.career {
+    position: relative;
+    padding: 0;
+    border-left: 0;
+    background: #558;
+}
+
+.career p {
+    width: 80%;
+    margin: 50px 0px 50px 10%;
+}
+
+.career p::before {
+    content: '';
+    position: absolute;
+    width 100px: ;
+    padding: 4px 18px;
+    color: #fff;
+    border: 1px solid #558;
+    background: #471563;
+    border-radius: 20px;
+    z-index: 4;
+    left: 3%;
+}
+
+.career .c-2011::before {
+    content: '2011';
+
+}
+
+.career .c-2012::before {
+    content: '2012';
+
+}
+
+.career .c-2014::before {
+    content: '2014';
+
+}
+
+.career .c-2016::before {
+    content: '2016';
+
+}
+
+.career .c-2017::before {
+    content: '2017';
+}
+
+.career .tline {
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background: #692290;
+    z-index: 1;
+    top: 0px;
+    left: 6%;
+}
+
+/* 📱 ***** breack points **** 📱*/
+@media screen and (max-width:1000px) {
+
+    .contaner section .info {
+        position: relative;
+        background: #fff;
+        padding: 40px;
+        border-radius: 5px;
+        margin: 2% auto;
+        background: #471563;
+    }
+
+    .contaner section article::before {
+        content: '';
+        width: 10px;
+        height: 100px;
+        background: #591399;
+        position: absolute;
+        z-index: -1;
+        left: calc(50% - 20px);
+        top: -94px;
+    }
+
+    .contaner section article p {
+        color: #ccc;
+        font-size: 18px;
+        line-height: 1.7;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 200;
+
+    }
+
+
+    .career {
+        position: relative;
+        padding: 0;
+        border-left: 0;
+        background: #558;
+    }
+
+    .career p {
+        width: 80%;
+        margin: 50px 0px 50px 10%;
+    }
+
+    .career p::before {
+        left: 2%;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    .career p {
+        width: 90%;
+        margin: 30px 0px 50px 15%;
+    }
+
+    .career p::before {
+        left: 1%;
+    }
+
+    .career .tline {
+        left: 7%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+
+    .career p::before {
+        left: 1%;
+    }
+
+    .career .tline {
+        left: 11%;
+    }
+}
